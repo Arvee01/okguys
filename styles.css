@@ -132,4 +132,6 @@ span{
     color: white;
   }
 
-  
+  .detel a:hover {
+    background-color: rgb(244, 51, 51);
+  }
