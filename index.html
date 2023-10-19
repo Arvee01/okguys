@@ -6,28 +6,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Personal Portfolio website</title>
     <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="output.css">
 </head>
 <body>
-    <div class="hero">
-        <nav>
-            <img src="spd.jpg" style="max-width:100%;height:auto;" class="logo">
-            <ul>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">ABOUT</a></li>
-                <li><a href="#">PORTFOLIO</a></li>
-            </ul>
+    <div class="hero  md:bg-green-500 lg:bg-teal-500">
+        <nav class="flex text-white">
+            
+            
+                <a href="#">HOME</a>
+                <a href="#">ABOUT</a>
+                <a href="#">PORTFOLIO</a>
+            
         </nav>
-        <div class="detel">
-            <h1 style="font: size 10vw">I,m Darren <span>Ventura</span></h1>
-            <p>This is my official Portfolio website to showes all
-                <br> Details about me
-            </p>
-            <a href="#">ABOUT ME</a> 
-        </div>
-        <div class="images">
-            <img src="tri.png" class="shape">
-            <img src="me.jpg" class="girl">
-        </div>
+        <main class="p-2">
+            <section class="text-white flex flex-col-reverse md:flex-row md:justify-center md:items-center md:mx-auto ">
+                <div class="flex flex-col gap-4">
+                    <h1 class="text-4xl">I'm Darren <span class="text-red-700">Ventura</span></h1>
+                    <p>This is my official Portfolio website to show all Details about me
+                    </p>
+                    <a href="#" class="border border-white hover:bg-slate-400 md:border-black p-2 w-auto text-center ">ABOUT ME</a>
+                </div>
+                <div class="container-sm">
+                    <img src="me.jpg" alt="me" class="max-w-full ">
+                </div>
+                
+            </section>
+        </main>
+        <!-- <div class="flex justify-center items-center h-auto"> 
+            <div class="detel">
+                <h1 style="font: size 10vw">I'm Darren <span>Ventura</span></h1>
+                <p>This is my official Portfolio website to showes all
+                    <br> Details about me
+                </p>
+                <a href="#">ABOUT ME</a> 
+            </div>
+            <div class="flex justify-center items-center w-80 h-80 images">
+                <img src="me.jpg" class="max-w-full" />
+            </div>
+        </div> -->
+       
     </div>
     <!-- Add icon library -->
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">

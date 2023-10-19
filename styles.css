@@ -43,7 +43,7 @@ nav ul li a:hover{
 }
 
 .detel h1{
-font-size: 50px;
+    font-size: clamp(3.125rem, 6.7969rem + -11.75vw, 0.1875rem);
 color: #ffffff;
 margin-bottom: 20x;
 
@@ -85,6 +85,8 @@ span{
     transform: translateX(-50%);
     transition: bottom 1s, left 1s;
     border-radius: 50%;
+    width: 100%;
+    max-width: 500px;
 }
 
 .images:hover .shape{
@@ -102,7 +104,7 @@ span{
 
 .fa {
     padding: 20px;
-    font-size: 30px;
+    font-size: clamp(0.1875rem, 0.1875rem + 0vw, 0.1875rem);
     width: 50px;
     text-align: center;
     text-decoration: none;
@@ -160,3 +162,13 @@ span{
         width: 100%;
     }
   }
+
+ @media screen and (max-width:820px) {
+    .hero{
+        flex-direction: column;
+    }
+
+    .detel h1{
+        text-align: center;
+    }
+ }
